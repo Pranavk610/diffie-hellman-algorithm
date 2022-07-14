@@ -17,8 +17,8 @@ pvt_key_b=sc.nextDouble();
 pub_key_a=Math.pow(root,pvt_key_a)%prime;
 pub_key_b=Math.pow(root,pvt_key_b)%prime;
 
-sec_no_a=Math.pow(pub_key_a,pvt_key_b)%prime;
-sec_no_b=Math.pow(pub_key_b,pvt_key_a)%prime;
+sec_no_a=Math.pow(pub_key_b,pvt_key_a)%prime;
+sec_no_b=Math.pow(pub_key_a,pvt_key_b)%prime;
 if(sec_no_a==sec_no_b){
 
 System.out.println("Can Communicate");
